@@ -1,0 +1,314 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+Z:\\>set home=c:\\users\\student\par
+\par
+Z:\\>c:\par
+\par
+C:\\>git config --global user.name"Adarshkr36"\par
+\par
+C:\\>git config --global user.email"adarsh367368@gmail.com"\par
+\par
+C:\\>git --version\par
+git version 2.45.1.windows.1\par
+\par
+C:\\>git init\par
+Reinitialized existing Git repository in C:/.git/\par
+\par
+C:\\>mkdir ost\par
+A subdirectory or file ost already exists.\par
+\par
+C:\\>git init\par
+Reinitialized existing Git repository in C:/.git/\par
+\par
+C:\\>cd ost\par
+\par
+C:\\ost>git init\par
+Reinitialized existing Git repository in C:/ost/.git/\par
+\par
+C:\\ost>git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+nothing to commit (create/copy files and use "git add" to track)\par
+\par
+C:\\ost>echo sample.txt\par
+sample.txt\par
+\par
+C:\\ost>echo demo.py\par
+demo.py\par
+\par
+C:\\ost>git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+nothing to commit (create/copy files and use "git add" to track)\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:27    <DIR>          .\par
+29-01-2026  12:27    <DIR>          ..\par
+               0 File(s)              0 bytes\par
+               2 Dir(s)  77,875,093,504 bytes free\par
+\par
+C:\\ost>echo sample.txt\par
+sample.txt\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:27    <DIR>          .\par
+29-01-2026  12:27    <DIR>          ..\par
+               0 File(s)              0 bytes\par
+               2 Dir(s)  77,875,093,504 bytes free\par
+\par
+C:\\ost>echo Hello>sample.txt\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:32    <DIR>          .\par
+29-01-2026  12:32    <DIR>          ..\par
+29-01-2026  12:32                 7 sample.txt\par
+               1 File(s)              7 bytes\par
+               2 Dir(s)  77,875,093,504 bytes free\par
+\par
+C:\\ost>type Sample.txt\par
+Hello\par
+\par
+C:\\ost>git commit -m"Initial Commit"\par
+On branch master\par
+\par
+Initial commit\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        sample.txt\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\ost>git commit -m"Initial Commit"\par
+On branch master\par
+\par
+Initial commit\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        sample.txt\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\ost>git add sample.txt\par
+\par
+C:\\ost>git commit -m"Initial Commit"\par
+[master (root-commit) 8da4b21] Initial Commit\par
+ Committer: Students <student@mefgi.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly. Run the\par
+following command and follow the instructions in your editor to edit\par
+your configuration file:\par
+\par
+    git config --global --edit\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 sample.txt\par
+\par
+C:\\ost>git branch\par
+* master\par
+\par
+C:\\ost>git branch -m master main\par
+\par
+C:\\ost>git branch\par
+* main\par
+\par
+C:\\ost>git checkout main\par
+Already on 'main'\par
+\par
+C:\\ost>git checkout -b dev\par
+Switched to a new branch 'dev'\par
+\par
+C:\\ost>echo Hello from dev>>sample.txt\par
+\par
+C:\\ost>git add.\par
+git: 'add.' is not a git command. See 'git --help'.\par
+\par
+The most similar command is\par
+        add\par
+\par
+C:\\ost>git add\par
+Nothing specified, nothing added.\par
+hint: Maybe you wanted to say 'git add .'?\par
+hint: Disable this message with "git config advice.addEmptyPathspec false"\par
+\par
+C:\\ost>git add .\par
+\par
+C:\\ost>git commit -m"Update in dev"\par
+[dev ed29fae] Update in dev\par
+ Committer: Students <student@mefgi.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly. Run the\par
+following command and follow the instructions in your editor to edit\par
+your configuration file:\par
+\par
+    git config --global --edit\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 1 insertion(+)\par
+\par
+C:\\ost>git merge dev\par
+Already up to date.\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:32    <DIR>          .\par
+29-01-2026  12:32    <DIR>          ..\par
+29-01-2026  12:39                23 sample.txt\par
+               1 File(s)             23 bytes\par
+               2 Dir(s)  77,874,790,400 bytes free\par
+\par
+C:\\ost>type sample.txt\par
+Hello\par
+Hello from dev\par
+\par
+C:\\ost>git remote -v\par
+\par
+C:\\ost>git remote add origin\par
+usage: git remote add [<options>] <name> <url>\par
+\par
+    -f, --[no-]fetch      fetch the remote branches\par
+    --[no-]tags           import all tags and associated objects when fetching\par
+                          or do not fetch any tag at all (--no-tags)\par
+    -t, --[no-]track <branch>\par
+                          branch(es) to track\par
+    -m, --[no-]master <branch>\par
+                          master branch\par
+    --[no-]mirror[=(push|fetch)]\par
+                          set up remote as a mirror to push to or fetch from\par
+\par
+\par
+C:\\ost>git remote add origin\par
+usage: git remote add [<options>] <name> <url>\par
+\par
+    -f, --[no-]fetch      fetch the remote branches\par
+    --[no-]tags           import all tags and associated objects when fetching\par
+                          or do not fetch any tag at all (--no-tags)\par
+    -t, --[no-]track <branch>\par
+                          branch(es) to track\par
+    -m, --[no-]master <branch>\par
+                          master branch\par
+    --[no-]mirror[=(push|fetch)]\par
+                          set up remote as a mirror to push to or fetch from\par
+\par
+\par
+C:\\ost>git remote add origin {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+\par
+C:\\ost>git remote -v\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22  (fetch)\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22  (push)\par
+\par
+C:\\ost>git push -u origin main\par
+info: please complete authentication in your browser...\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+ ! [rejected]        main -> main (fetch first)\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22 '\par
+hint: Updates were rejected because the remote contains work that you do not\par
+hint: have locally. This is usually caused by another repository pushing to\par
+hint: the same ref. If you want to integrate the remote changes, use\par
+hint: 'git pull' before pushing again.\par
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\par
+\par
+C:\\ost>git push -u origin main\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+ ! [rejected]        main -> main (fetch first)\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22 '\par
+hint: Updates were rejected because the remote contains work that you do not\par
+hint: have locally. This is usually caused by another repository pushing to\par
+hint: the same ref. If you want to integrate the remote changes, use\par
+hint: 'git pull' before pushing again.\par
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\par
+\par
+C:\\ost>git checkout main\par
+Switched to branch 'main'\par
+\par
+C:\\ost>git pull origin main\par
+remote: Enumerating objects: 9, done.\par
+remote: Counting objects: 100% (9/9), done.\par
+remote: Compressing objects: 100% (7/7), done.\par
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)\par
+Unpacking objects: 100% (9/9), 331.67 KiB | 758.00 KiB/s, done.\par
+From {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+ * branch            main       -> FETCH_HEAD\par
+ * [new branch]      main       -> origin/main\par
+fatal: refusing to merge unrelated histories\par
+\par
+C:\\ost>\par
+C:\\ost>git add .\par
+\par
+C:\\ost>git commit -m "Resolved merge conflicts"\par
+On branch main\par
+nothing to commit, working tree clean\par
+\par
+C:\\ost>git push origin main\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+ ! [rejected]        main -> main (non-fast-forward)\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22 '\par
+hint: Updates were rejected because the tip of your current branch is behind\par
+hint: its remote counterpart. If you want to integrate the remote changes,\par
+hint: use 'git pull' before pushing again.\par
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\par
+\par
+C:\\ost>\par
+C:\\ost>git pull --rebase origin main\par
+From {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+ * branch            main       -> FETCH_HEAD\par
+Successfully rebased and updated refs/heads/main.\par
+\par
+C:\\ost>git push origin main\par
+Enumerating objects: 4, done.\par
+Counting objects: 100% (4/4), done.\par
+Delta compression using up to 4 threads\par
+Compressing objects: 100% (2/2), done.\par
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.\par
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)\par
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/Adarshkr36/OST-Adarsh }}{\fldrslt{https://github.com/Adarshkr36/OST-Adarsh\ul0\cf0}}}}\f0\fs22\par
+   c3fd0e0..a8393c4  main -> main\par
+\par
+C:\\ost>\par
+C:\\ost>git push origin main --force\par
+Everything up-to-date\par
+\par
+C:\\ost>\par
+C:\\ost>git push -u origin main\par
+branch 'main' set up to track 'origin/main'.\par
+Everything up-to-date\par
+\par
+C:\\ost>\par
+}
+ 
